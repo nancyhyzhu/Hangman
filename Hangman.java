@@ -11,7 +11,7 @@ import hsa.Console; //enables access to HSA console
 import java.io.*; //enables access to IO files
 import javax.swing.JOptionPane; //enables access to use JOptionPane
 
-public class Hangman2
+public class Hangman
 {
     //Declaration Section
     Console c; //console
@@ -26,7 +26,7 @@ public class Hangman2
     int points = 0; //counts user points
     int drawBodyPart = 0; //determines whether to draw the next body part or not
 
-    public Hangman2 ()  //class constructor
+    public Hangman ()  //class constructor
     {
 	c = new Console ("Hangman ISP Game"); //creates the console
     }
@@ -704,7 +704,7 @@ public class Hangman2
 
     public static void main (String[] args)
     {
-	Hangman2 d = new Hangman2 (); //creates new Hangman object
+	Hangman d = new Hangman (); //creates new Hangman object
 	d.splashScreen (); //executes splashScreen method once at the beginning of the program
 	while (!d.choice.equals ("5")) //runs until the user wants to exit
 	{
@@ -726,4 +726,4 @@ public class Hangman2
 	}
 	d.goodbye (); //executes goodbye method once at the end of the program
     } // main method
-} // Hangman2 class
+} // Hangman class
